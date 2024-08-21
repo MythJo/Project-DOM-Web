@@ -1,0 +1,175 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header {
+    background-color: #333;
+    color: white;
+    padding: 10px 0;
+    width: 100%;
+    text-align: center;
+}
+
+h1 {
+    background: -webkit-linear-gradient(#000000, #ffffff);
+    font-family: 'Times New Roman', Times, serif;
+    color: rgb(31, 27, 27);
+    margin: 0;
+}
+
+main {
+    background-color: white;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    margin: 20px;
+    width: 90%;
+    max-width: 1200px;
+}
+
+p {
+    color: rgb(0, 0, 0);
+    font-size: 1.2em;
+}
+
+img {
+    width: 150px;
+    border-radius: 50%;
+    margin: 10px 0;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+th, td {
+    padding: 10px;
+    text-align: left;
+}
+
+th {
+    background-color: #333;
+    color: white;
+}
+
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+#jojo_description, #panji_description, #Rangga_description {
+    display: none; /* Menyembunyikan tabel secara default */
+}
+
+.sosmed {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    color: white;
+    background-color: #007BFF;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+a:hover {
+    background-color: #0056b3;
+}
+
+.icon-ig {
+    fill: red;
+}
+
+.icon-fb {
+    fill: blue;
+}
+
+.icon-tw {
+    fill: #007BFF;
+}
+
+.sosmed-container {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: 1.2em;
+    flex-wrap: wrap; /* Agar elemen beralih ke baris baru jika ruang tidak cukup */
+}
+
+.sosmed-container a {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: black;
+    font-size: 16px;
+}
+
+.sosmed-container svg {
+    margin-left: 5px;
+}
+
+/* Media Queries untuk membuat layout lebih responsif */
+@media (max-width: 768px) {
+    main {
+        width: 100%;
+        margin: 10px;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    p {
+        font-size: 1em;
+        text-align: center;
+    }
+
+    img {
+        width: 100px;
+        margin: auto;
+    }
+
+    .sosmed-container {
+        justify-content: center;
+        gap: 15px;
+    }
+
+    .sosmed-container a {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 480px) {
+    header {
+        font-size: 0.9em;
+    }
+
+    h1 {
+        font-size: 1.5em;
+    }
+
+    p {
+        font-size: 0.9em;
+    }
+
+    img {
+        width: 80px;
+    }
+
+    .sosmed-container {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .sosmed-container a {
+        font-size: 12px;
+    }
+}
+
+
